@@ -1,0 +1,46 @@
+<html><head>
+    <title>THM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <link href="style.css" rel="stylesheet">
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>     
+             <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  
+</head>
+<body>
+    <center>
+<h1 class="f">Teachable Machine App</h1>
+<h3 class="f">Model is trained to identefy the following objects:</h3>
+<br>
+    <hr>
+<div class="Items">
+    <br>
+    <h4>Water Bottle</h4>
+    <hr>
+    <h4>Textbook</h4>
+    <hr>
+    <h4>Pencil</h4>
+    <hr>
+    <h4>Computer Mouse</h4>
+   <br>
+</div>
+
+<h3>Webcam view</h3>
+
+<div id="Wview">
+</div>
+<div id="Captured_img">
+</div>
+<br>
+<button onclick="take_snapshot()" class="btn btn-success">Capture Image</button>
+<button onclick="check()" class="btn btn-info">Identify Image</button>
+<br>
+<p style="font-size: 22px;">Object :<span id="result_object_name"></span></p>
+<p style="font-size: 22px;">Accuracy :<span id="result_object_accuracy"></span></p>
+</center>
+<script src="main.js"></script>
+</body>
+</html>

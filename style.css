@@ -1,0 +1,17 @@
+.Items{
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    width: 350px;
+}
+
+#Wview{
+    border-style: groove;
+    border-width: 10px;
+width: 350;
+height:300;
+}
+
+body{
+    background: linear-gradient(#e66465, #9198e5);
+}
