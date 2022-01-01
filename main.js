@@ -27,7 +27,7 @@ function modelLoaded(){
     console.log("TAKEOFF");
     }
 
-    function check(){
+    function Identify_image(){
         image = document.getElementById('captured_image')
         Classifier.classify(image,gotResult);
     }
